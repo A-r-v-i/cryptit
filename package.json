@@ -1,0 +1,14 @@
+{
+  "name": "@aravinds/cryptit",
+  "version": "1.0.0",
+  "description": "Crypting strings/passwords which is helpful while storing the values in DB",
+  "license": "MIT",
+  "repository": "A-r-v-i/cryptit",
+  "main": "index.js",
+  "keywords": [
+    "cryptit",
+    "npm",
+    "package",
+    "password"
+  ]
+}
