@@ -1,5 +1,3 @@
-const sample = (str) => {
+module.exports = function sample(str) {
   return str.split(" ");
-}
-
-module.exports = sample;
+};
