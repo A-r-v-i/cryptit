@@ -12,7 +12,6 @@ module.exports = function cryptit(str) {
   let num;
   arr.forEach(function (c) {
     num = Number(c);
-    //case "integers"
     if (!isNaN(num)) {
       if (num % 2 == 0) {
         res += String.fromCharCode(57 - num) + "&";
