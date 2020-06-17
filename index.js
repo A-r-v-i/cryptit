@@ -1,6 +1,5 @@
-module.exports = function cryptit(str) {
-  const password = str;
-  const arr = password.split("");
+const cryptit = (str) => {
+  const arr = str.split("");
   let num,
     x,
     res = "";
@@ -21,7 +20,15 @@ module.exports = function cryptit(str) {
   return res;
 };
 
-module.exports = function decryptit(uPwd, cPwd) {
+const decryptit = (uPwd, cPwd) => {
   let crypt = cryptit(uPwd);
-  return (crypt == cPwd) ? true : false;
-}
+  if (crypt === cPwd) {
+    return true;
+  }
+  return false;
+};
+
+module.exports = {
+  cryptit,
+  decryptit,
+};

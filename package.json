@@ -5,6 +5,7 @@
   "license": "MIT",
   "repository": "A-r-v-i/cryptit",
   "main": "index.js",
+  
   "keywords": [
     "cryptit",
     "npm",
