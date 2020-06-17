@@ -1,4 +1,3 @@
-};
 module.exports = function cryptit(str) {
   const password = str;
   const arr = password.split("");
