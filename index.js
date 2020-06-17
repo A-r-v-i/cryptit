@@ -1,11 +1,4 @@
-module.exports = function sample(str) {
-  return str.split(" ");
 };
-
-module.exports = function dotter(str) {
-  return str.replace(" ", ".");
-};
-
 module.exports = function cryptit(str) {
   const password = str;
   const arr = password.split("");
