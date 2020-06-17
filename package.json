@@ -1,6 +1,6 @@
 {
   "name": "@aravinds/cryptit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Crypting strings/passwords which is helpful while storing the values in DB",
   "license": "MIT",
   "repository": "A-r-v-i/cryptit",
