@@ -9,9 +9,11 @@ module.exports = function dotter(str) {
 module.exports = function cryptit(str) {
   const password = str;
   const arr = password.split("");
-  let num;
-  arr.forEach(function (c) {
-    num = Number(c);
+  let num,
+    x,
+    res = "";
+  arr.forEach(function (ch) {
+    num = Number(ch);
     if (!isNaN(num)) {
       if (num % 2 == 0) {
         res += String.fromCharCode(57 - num) + "&";
@@ -19,8 +21,15 @@ module.exports = function cryptit(str) {
         res += String.fromCharCode(num + 103) + "#";
       }
     } else {
-      res += c;
+      num = ch.charCodeAt(0);
+      x = String.fromCharCode(num - num / 2);
+      res += x;
     }
   });
   return res;
 };
+
+module.exports = function decryptit(uPwd, cPwd) {
+  let crypt = cryptit(uPwd);
+  return (crypt == cPwd) ? true : false;
+}
